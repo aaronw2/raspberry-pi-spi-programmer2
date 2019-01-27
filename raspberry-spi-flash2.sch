@@ -1,0 +1,486 @@
+EESchema Schematic File Version 4
+LIBS:raspberry-spi-flash2-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 2
+Title "Raspberry Pi HAT"
+Date "2019-01-26"
+Rev "2.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L raspberry-spi-flash2-rescue:Mounting_Hole-Mechanical H1
+U 1 1 5834BC4A
+P 8700 5750
+F 0 "H1" H 8550 5850 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 8700 5600 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 8600 5750 60  0001 C CNN
+F 3 "" H 8600 5750 60  0001 C CNN
+	1    8700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L raspberry-spi-flash2-rescue:Mounting_Hole-Mechanical H2
+U 1 1 5834BCDF
+P 9700 5750
+F 0 "H2" H 9550 5850 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 9700 5600 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 9600 5750 60  0001 C CNN
+F 3 "" H 9600 5750 60  0001 C CNN
+	1    9700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L raspberry-spi-flash2-rescue:Mounting_Hole-Mechanical H3
+U 1 1 5834BD62
+P 8700 6300
+F 0 "H3" H 8550 6400 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 8700 6150 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 8600 6300 60  0001 C CNN
+F 3 "" H 8600 6300 60  0001 C CNN
+	1    8700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L raspberry-spi-flash2-rescue:Mounting_Hole-Mechanical H4
+U 1 1 5834BDED
+P 9750 6300
+F 0 "H4" H 9600 6400 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 9750 6150 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 9650 6300 60  0001 C CNN
+F 3 "" H 9650 6300 60  0001 C CNN
+	1    9750 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L raspberry-spi-flash2-rescue:OX40HAT-raspberrypi_hat J3
+U 1 1 58DFC771
+P 2600 2250
+F 0 "J3" H 2950 2350 50  0000 C CNN
+F 1 "40HAT" H 2300 2350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2600 2450 50  0001 C CNN
+F 3 "" H 1900 2250 50  0000 C CNN
+	1    2600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L raspberry-spi-flash2-rescue:CAT24C32-raspberrypi_hat U2
+U 1 1 58E1713F
+P 2100 5850
+F 0 "U2" H 2450 6200 50  0000 C CNN
+F 1 "CAT24C32" H 1850 6200 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2100 5850 50  0001 C CNN
+F 3 "" H 2100 5850 50  0000 C CNN
+	1    2100 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 58E17715
+P 2350 7400
+F 0 "R6" V 2430 7400 50  0000 C CNN
+F 1 "3.9K" V 2350 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 7400 50  0001 C CNN
+F 3 "" H 2350 7400 50  0001 C CNN
+	1    2350 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 58E17720
+P 2350 7650
+F 0 "R8" V 2430 7650 50  0000 C CNN
+F 1 "3.9K" V 2350 7650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 7650 50  0001 C CNN
+F 3 "" H 2350 7650 50  0001 C CNN
+	1    2350 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 7400 2150 7400
+Wire Wire Line
+	1250 7650 2150 7650
+Wire Wire Line
+	2150 7500 1250 7500
+Wire Wire Line
+	2150 7750 1250 7750
+Wire Wire Line
+	2150 7750 2150 7650
+Connection ~ 2150 7650
+Wire Wire Line
+	2150 7500 2150 7400
+Connection ~ 2150 7400
+Wire Wire Line
+	2500 7400 2700 7400
+Wire Wire Line
+	2700 7650 2500 7650
+Connection ~ 2700 7400
+Text Label 1250 7400 0    60   ~ 0
+ID_SD_EEPROM_pu
+Text Label 1250 7500 0    60   ~ 0
+ID_SD_EEPROM
+Text Label 1250 7650 0    60   ~ 0
+ID_SC_EEPROM_pu
+Text Label 1250 7750 0    60   ~ 0
+ID_SC_EEPROM
+Wire Wire Line
+	3450 6050 2600 6050
+Wire Wire Line
+	2600 5950 3450 5950
+Text Label 3450 5950 2    60   ~ 0
+ID_SD_EEPROM_pu
+Text Label 3450 6050 2    60   ~ 0
+ID_SC_EEPROM_pu
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 58E18D32
+P 750 6100
+F 0 "J9" H 750 6250 50  0000 C CNN
+F 1 "CONN_01X02" V 850 6100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 750 6100 50  0001 C CNN
+F 3 "" H 750 6100 50  0000 C CNN
+	1    750  6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 58E19E51
+P 950 5600
+F 0 "R29" V 1030 5600 50  0000 C CNN
+F 1 "10K" V 950 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 880 5600 50  0001 C CNN
+F 3 "" H 950 5600 50  0001 C CNN
+	1    950  5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 58E1A612
+P 1150 5750
+F 0 "#PWR03" H 1150 5500 50  0001 C CNN
+F 1 "GND" H 1150 5600 50  0000 C CNN
+F 2 "" H 1150 5750 50  0000 C CNN
+F 3 "" H 1150 5750 50  0000 C CNN
+	1    1150 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5650 1300 5750
+Wire Wire Line
+	1600 5750 1300 5750
+Connection ~ 1300 5750
+Wire Wire Line
+	1300 5850 1600 5850
+$Comp
+L power:GND #PWR04
+U 1 1 58E1AF98
+P 1050 6150
+F 0 "#PWR04" H 1050 5900 50  0001 C CNN
+F 1 "GND" H 1050 6000 50  0000 C CNN
+F 2 "" H 1050 6150 50  0000 C CNN
+F 3 "" H 1050 6150 50  0000 C CNN
+	1    1050 6150
+	1    0    0    -1  
+$EndComp
+Text Notes 3250 5350 0    60   ~ 0
+EEPROM WRITE ENABLE
+Text Notes 1550 7050 0    118  ~ 24
+Pullup Resistors
+Text Notes 2000 4800 0    118  ~ 24
+HAT EEPROM
+Text Notes 8350 5450 0    118  ~ 24
+Mounting Holes
+Text Notes 1650 2000 0    118  ~ 24
+40-Pin HAT Connector
+Text Label 800  4150 0    60   ~ 0
+GND
+Wire Wire Line
+	2000 4150 800  4150
+Text Label 800  3550 0    60   ~ 0
+ID_SD_EEPROM
+Wire Wire Line
+	2000 3550 800  3550
+Text Label 800  3450 0    60   ~ 0
+GND
+Wire Wire Line
+	2000 3450 800  3450
+Text Label 800  2650 0    60   ~ 0
+GND
+Wire Wire Line
+	2000 2650 800  2650
+Wire Wire Line
+	3200 2850 4400 2850
+Wire Wire Line
+	3200 3150 4400 3150
+Wire Wire Line
+	3200 3550 4400 3550
+Wire Wire Line
+	3200 3650 4400 3650
+Wire Wire Line
+	3200 3850 4400 3850
+Text Label 4400 2850 2    60   ~ 0
+GND
+Text Label 4400 3150 2    60   ~ 0
+GND
+Text Label 4400 3650 2    60   ~ 0
+GND
+Text Label 4400 3550 2    60   ~ 0
+ID_SC_EEPROM
+Text Label 4400 3850 2    60   ~ 0
+GND
+Text Label 4400 2450 2    60   ~ 0
+GND
+Wire Wire Line
+	3200 2450 4400 2450
+Wire Wire Line
+	2700 7650 2700 7400
+Text Notes 1200 5200 0    60   ~ 0
+The HAT spec requires this EEPROM with system information\nto be in place in order to be called a HAT. It should be set up as write\nprotected (WP pin held high), so it may be desirable to either put a \njumper as shown to enable writing, or to hook up a spare IO pin to do so.
+Text Notes 1100 7250 0    60   ~ 0
+These are just pullup resistors for the I2C bus on the EEPROM.\nThe resistor values are per the HAT spec.
+Text Notes 850  1250 0    100  ~ 0
+This is based on the official Raspberry Pi spec to be able to call an extension board a HAT.\nhttps://github.com/raspberrypi/hats/blob/master/designguide.md
+$Comp
+L power:GND #PWR05
+U 1 1 58E3CC10
+P 2100 6350
+F 0 "#PWR05" H 2100 6100 50  0001 C CNN
+F 1 "GND" H 2100 6200 50  0000 C CNN
+F 2 "" H 2100 6350 50  0000 C CNN
+F 3 "" H 2100 6350 50  0000 C CNN
+	1    2100 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6250 2100 6350
+Wire Wire Line
+	1550 6000 1550 6050
+Connection ~ 1300 5650
+Wire Wire Line
+	950  6100 1050 6100
+Wire Wire Line
+	1050 6150 1050 6100
+Wire Wire Line
+	950  6000 1550 6000
+Wire Wire Line
+	2150 7650 2200 7650
+Wire Wire Line
+	2150 7400 2200 7400
+Wire Wire Line
+	1300 5750 1300 5850
+Wire Wire Line
+	1300 5650 1600 5650
+Wire Wire Line
+	1550 6050 1600 6050
+$Sheet
+S 4700 1600 5700 3350
+U 5C58C8EF
+F0 "SPI Flash Programmer" 50
+F1 "spi-flash-programmer.sch" 50
+$EndSheet
+Wire Wire Line
+	2000 2950 800  2950
+Text Label 800  2950 0    50   ~ 0
+OE
+Wire Wire Line
+	2000 2750 800  2750
+Text Label 800  2750 0    50   ~ 0
+V1_8_SEL
+Wire Wire Line
+	2000 2850 800  2850
+Text Label 800  2850 0    50   ~ 0
+V3_3_SEL
+Wire Wire Line
+	2000 3150 800  3150
+Text Label 800  3150 0    50   ~ 0
+R_MOSI
+Wire Wire Line
+	2000 3250 800  3250
+Text Label 800  3250 0    50   ~ 0
+R_MISO
+Wire Wire Line
+	2000 3350 800  3350
+Text Label 800  3350 0    50   ~ 0
+R_SCLK
+Wire Wire Line
+	3200 3350 4400 3350
+Text Label 4050 3350 0    50   ~ 0
+R_FL_CS0
+Wire Wire Line
+	3200 3450 4400 3450
+Text Label 4050 3450 0    50   ~ 0
+R_FL_CS1
+Text GLabel 5350 6400 0    50   Input ~ 0
+R_MOSI
+Text GLabel 5400 5300 2    50   Output ~ 0
+R_MISO
+Text GLabel 5400 5450 2    50   Output ~ 0
+R_SCLK
+Text GLabel 5400 5600 2    50   Output ~ 0
+R_FL_CS0
+Text GLabel 5400 5750 2    50   Output ~ 0
+R_FL_CS1
+Text GLabel 7850 8550 0    50   Output ~ 0
+EN
+Wire Wire Line
+	5350 6400 5800 6400
+Text Label 5550 6400 0    50   ~ 0
+R_MOSI
+Wire Wire Line
+	5400 5300 4950 5300
+Text Label 5200 5300 2    50   ~ 0
+R_MISO
+Wire Wire Line
+	5400 5450 4950 5450
+Text Label 5200 5450 2    50   ~ 0
+R_SCLK
+Wire Wire Line
+	5400 5600 4950 5600
+Text Label 5300 5600 2    50   ~ 0
+R_FL_CS0
+Wire Wire Line
+	5400 5750 4950 5750
+Text Label 5300 5750 2    50   ~ 0
+R_FL_CS1
+Wire Wire Line
+	7850 8550 8300 8550
+Text Label 8200 8550 0    50   ~ 0
+EN
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 5C5CE14D
+P 650 3050
+F 0 "#PWR0129" H 650 2900 50  0001 C CNN
+F 1 "+3.3V" H 665 3223 50  0000 C CNN
+F 2 "" H 650 3050 50  0001 C CNN
+F 3 "" H 650 3050 50  0001 C CNN
+	1    650  3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0130
+U 1 1 5C5CE185
+P 650 2250
+F 0 "#PWR0130" H 650 2100 50  0001 C CNN
+F 1 "+3.3V" H 665 2423 50  0000 C CNN
+F 2 "" H 650 2250 50  0001 C CNN
+F 3 "" H 650 2250 50  0001 C CNN
+	1    650  2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  2250 2000 2250
+Wire Wire Line
+	650  3050 2000 3050
+$Comp
+L power:+5V #PWR0131
+U 1 1 5C5D454B
+P 4500 2250
+F 0 "#PWR0131" H 4500 2100 50  0001 C CNN
+F 1 "+5V" H 4515 2423 50  0000 C CNN
+F 2 "" H 4500 2250 50  0001 C CNN
+F 3 "" H 4500 2250 50  0001 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2250 4500 2250
+Wire Wire Line
+	4500 2350 4500 2250
+Wire Wire Line
+	3200 2350 4500 2350
+Connection ~ 4500 2250
+$Comp
+L power:+3.3V #PWR0132
+U 1 1 5C5EF72B
+P 950 5450
+F 0 "#PWR0132" H 950 5300 50  0001 C CNN
+F 1 "+3.3V" H 965 5623 50  0000 C CNN
+F 2 "" H 950 5450 50  0001 C CNN
+F 3 "" H 950 5450 50  0001 C CNN
+	1    950  5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5750 1150 5650
+Wire Wire Line
+	1150 5650 1300 5650
+Wire Wire Line
+	950  5750 950  6000
+Connection ~ 950  6000
+$Comp
+L power:+3.3V #PWR0133
+U 1 1 5C5F3BCB
+P 2100 5450
+F 0 "#PWR0133" H 2100 5300 50  0001 C CNN
+F 1 "+3.3V" H 2115 5623 50  0000 C CNN
+F 2 "" H 2100 5450 50  0001 C CNN
+F 3 "" H 2100 5450 50  0001 C CNN
+	1    2100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 5C5F513A
+P 3200 7400
+F 0 "#PWR0134" H 3200 7250 50  0001 C CNN
+F 1 "+3.3V" H 3215 7573 50  0000 C CNN
+F 2 "" H 3200 7400 50  0001 C CNN
+F 3 "" H 3200 7400 50  0001 C CNN
+	1    3200 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 7400 3200 7400
+$Comp
+L Device:C C8
+U 1 1 5C4C9D6E
+P 3800 5900
+F 0 "C8" H 3915 5946 50  0000 L CNN
+F 1 "0.1uF" H 3915 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 5750 50  0001 C CNN
+F 3 "~" H 3800 5900 50  0001 C CNN
+	1    3800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0135
+U 1 1 5C4C9E7E
+P 3800 5750
+F 0 "#PWR0135" H 3800 5600 50  0001 C CNN
+F 1 "+3.3V" H 3815 5923 50  0000 C CNN
+F 2 "" H 3800 5750 50  0001 C CNN
+F 3 "" H 3800 5750 50  0001 C CNN
+	1    3800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5C4C9E9F
+P 3800 6050
+F 0 "#PWR0136" H 3800 5800 50  0001 C CNN
+F 1 "GND" H 3800 5900 50  0000 C CNN
+F 2 "" H 3800 6050 50  0000 C CNN
+F 3 "" H 3800 6050 50  0000 C CNN
+	1    3800 6050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 5950 2    50   Output ~ 0
+V1_8_SEL
+Text GLabel 5400 6150 2    50   Output ~ 0
+V3_3_SEL
+Wire Wire Line
+	5400 5950 4950 5950
+Text Label 4950 5950 0    50   ~ 0
+V1_8_SEL
+Wire Wire Line
+	4950 6150 5400 6150
+Text Label 4950 6150 0    50   ~ 0
+V3_3_SEL
+$EndSCHEMATC
