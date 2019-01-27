@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 2 2
 Title "Raspberry PI SPI flash hat"
 Date "2019-01-26"
-Rev "2.0"
+Rev "2.1.0"
 Comp "Copyright (C) 2019 Aaron Williams"
 Comment1 ""
 Comment2 ""
@@ -1064,9 +1064,9 @@ Wire Wire Line
 Wire Wire Line
 	3900 6450 3900 6700
 Connection ~ 3900 6450
-Text GLabel 1600 3850 0    50   Input ~ 0
+Text GLabel 1200 4700 0    50   Input ~ 0
 R_FL_CS1
-Text Label 1600 3850 0    50   ~ 0
+Text Label 1250 4700 0    50   ~ 0
 R_FL_CS1
 $Comp
 L raspberry-spi-flash2-rescue:C-device-raspberry-spi-flash-rescue C?
@@ -1153,8 +1153,8 @@ Wire Wire Line
 Text Label 2900 3850 0    50   ~ 0
 FL_CS1
 Wire Wire Line
-	1950 4000 1600 4000
-Text Label 1600 4000 0    50   ~ 0
+	1950 4000 1800 4000
+Text Label 1800 4000 0    50   ~ 0
 OE
 $Comp
 L Aaron:TXB0101DBV U6
@@ -1328,6 +1328,27 @@ F 3 "" H 6200 1950 50  0000 C CNN
 $EndComp
 Text Notes 6450 1750 0    50   ~ 0
 White power LED
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5C54EE1D
+P 1900 4600
+F 0 "J1" H 1980 4642 50  0000 L CNN
+F 1 "Conn_01x03" H 1980 4551 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1900 4600 50  0001 C CNN
+F 3 "~" H 1900 4600 50  0001 C CNN
+	1    1900 4600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1600 3850 1950 3850
+	1200 4700 1700 4700
+Wire Wire Line
+	1700 4500 1200 4500
+Text Label 1250 4500 0    50   ~ 0
+R_FL_CS0
+Wire Wire Line
+	1700 4600 1650 4600
+Wire Wire Line
+	1650 4600 1650 3850
+Wire Wire Line
+	1650 3850 1950 3850
 $EndSCHEMATC
