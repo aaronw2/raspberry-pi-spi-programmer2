@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "Raspberry Pi HAT"
-Date "2019-01-26"
-Rev "2.0"
+Date "2019-01-28"
+Rev "2.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -65,7 +65,12 @@ P 2600 2250
 F 0 "J3" H 2950 2350 50  0000 C CNN
 F 1 "40HAT" H 2300 2350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2600 2450 50  0001 C CNN
-F 3 "" H 1900 2250 50  0000 C CNN
+F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE123%20.100%20SFH11%20SERIES%20FEMALE%20HDR%20ST%20RA.pdf" H 1900 2250 50  0000 C CNN
+F 4 "Sullins Connector Solutions" H 2600 2250 50  0001 C CNN "MFR"
+F 5 "SFH11-PBPC-D20-ST-BK" H 2600 2250 50  0001 C CNN "MPN"
+F 6 "Digikey" H 2600 2250 50  0001 C CNN "SPR"
+F 7 "S9200-ND" H 2600 2250 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/sullins-connector-solutions/SFH11-PBPC-D20-ST-BK/S9200-ND/1990093" H 2600 2250 50  0001 C CNN "SPURL"
 	1    2600 2250
 	1    0    0    -1  
 $EndComp
@@ -76,7 +81,12 @@ P 2100 5850
 F 0 "U2" H 2450 6200 50  0000 C CNN
 F 1 "CAT24C32" H 1850 6200 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2100 5850 50  0001 C CNN
-F 3 "" H 2100 5850 50  0000 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/CAT24C32-D.PDF" H 2100 5850 50  0000 C CNN
+F 4 "ON Semiconductor" H 2100 5850 50  0001 C CNN "MFR"
+F 5 "CAT24C32WI-GT3" H 2100 5850 50  0001 C CNN "MPN"
+F 6 "Digikey" H 2100 5850 50  0001 C CNN "SPR"
+F 7 "CAT24C32WI-GT3CT-ND" H 2100 5850 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/on-semiconductor/CAT24C32WI-GT3/CAT24C32WI-GT3CT-ND/1631159" H 2100 5850 50  0001 C CNN "SPURL"
 	1    2100 5850
 	1    0    0    -1  
 $EndComp
@@ -87,7 +97,12 @@ P 2350 7400
 F 0 "R6" V 2430 7400 50  0000 C CNN
 F 1 "3.9K" V 2350 7400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 7400 50  0001 C CNN
-F 3 "" H 2350 7400 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 2350 7400 50  0001 C CNN
+F 4 "Yageo" H 2350 7400 50  0001 C CNN "MFR"
+F 5 "RC0603FR-073K9L" H 2350 7400 50  0001 C CNN "MPN"
+F 6 "Digikey" H 2350 7400 50  0001 C CNN "SPR"
+F 7 "311-3.90KHRCT-ND" H 2350 7400 50  0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-073K9L/311-3.90KHRCT-ND/730083" H 2350 7400 50  0001 C CNN "SPURL"
 	1    2350 7400
 	0    1    1    0   
 $EndComp
@@ -289,10 +304,6 @@ Wire Wire Line
 Text Label 800  2950 0    50   ~ 0
 OE
 Wire Wire Line
-	2000 2750 800  2750
-Text Label 800  2750 0    50   ~ 0
-V1_8_SEL
-Wire Wire Line
 	2000 2850 800  2850
 Text Label 800  2850 0    50   ~ 0
 V3_3_SEL
@@ -471,16 +482,37 @@ F 3 "" H 3800 6050 50  0000 C CNN
 	1    3800 6050
 	1    0    0    -1  
 $EndComp
-Text GLabel 5400 5950 2    50   Output ~ 0
-V1_8_SEL
-Text GLabel 5400 6150 2    50   Output ~ 0
+Text GLabel 5400 6150 2    50   BiDi ~ 0
 V3_3_SEL
-Wire Wire Line
-	5400 5950 4950 5950
-Text Label 4950 5950 0    50   ~ 0
-V1_8_SEL
 Wire Wire Line
 	4950 6150 5400 6150
 Text Label 4950 6150 0    50   ~ 0
 V3_3_SEL
+Wire Wire Line
+	2000 3650 800  3650
+Text Label 800  3650 0    50   ~ 0
+CS1_CS0_SEL
+Text GLabel 5400 6700 2    50   BiDi ~ 0
+CS1_CS0_SEL
+Wire Wire Line
+	5400 6700 4950 6700
+Text Label 5350 6700 2    50   ~ 0
+CS1_SC0_SEL
+$Comp
+L Aaron:Logo-URL A1
+U 1 1 5C58F149
+P 5000 7300
+F 0 "A1" H 5228 7346 50  0000 L CNN
+F 1 "Logo-URL" H 5228 7255 50  0000 L CNN
+F 2 "Aaron:LOGO-raspberry-pi-spi-programmer2" H 5000 7300 50  0001 C CNN
+F 3 "" H 5000 7300 50  0001 C CNN
+	1    5000 7300
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 5900 2    50   BiDi ~ 0
+OE
+Wire Wire Line
+	5400 5900 4950 5900
+Text Label 5050 5900 2    50   ~ 0
+OE
 $EndSCHEMATC
