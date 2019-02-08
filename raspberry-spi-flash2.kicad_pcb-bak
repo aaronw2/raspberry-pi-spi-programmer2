@@ -12,8 +12,8 @@
   (page USLetter)
   (title_block
     (title "Raspberry Pi SPI NOR Programmer Hat")
-    (date 2019-01-28)
-    (rev 2.2.0)
+    (date 2019-02-08)
+    (rev 2.2.1)
   )
 
   (layers
@@ -3776,7 +3776,7 @@
   (gr_text VPP (at 124 76.3) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "Raspberry PI Hat\nSOIC-16 and SOIC-8\nSPI NOR Programmer\nCopyright © 2019 by\nAaron Williams\nRevision 2.2" (at 130.2 90.1) (layer F.SilkS)
+  (gr_text "Raspberry PI Hat\nSOIC-16 and SOIC-8\nSPI NOR Programmer\nCopyright © 2019 by\nAaron Williams\nRevision 2.2.1" (at 130.2 90.1) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 119.7 103.5) (end 120.6 102.7) (layer F.SilkS) (width 0.15))
